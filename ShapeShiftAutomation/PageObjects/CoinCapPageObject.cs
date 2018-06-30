@@ -36,7 +36,7 @@ namespace ShapeShiftAutomation.PageObjects
                     ret = GetElementText(PercentageValue);
                     if (!string.IsNullOrEmpty(ret))
                     {
-                        ret = ret.Trim('(').Trim(')');
+                        ret = ret.Trim('(').Trim(')').Trim('0');
                     }
                     break;
                 default:
